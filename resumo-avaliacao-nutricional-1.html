@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resumo · Avaliação Nutricional (1ª prova)</title>
+<style>
+:root{--bg:#faf6f1;--c:#fff;--t:#2b211c;--m:#7a6a60;--a:#b5573b;--l:#e8ddd3;--ok:#2e7d4f;--am:#c58a1b;--ver:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#171210;--c:#231c18;--t:#f1e8e1;--m:#a99b91;--a:#e08a6c;--l:#3a2f29;--ok:#5cc18a;--am:#e0a93a;--ver:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.55 system-ui,-apple-system,sans-serif;padding-bottom:30px}
+main{max-width:720px;margin:auto;padding:14px}
+h1{font-size:1.4rem;margin:.3em 0}
+h2{font-size:1.05rem;margin:.9em 0 .3em;color:var(--a)}
+p{margin:.4em 0}
+.sub{color:var(--m);font-size:.9rem}
+details{background:var(--c);border:1px solid var(--l);border-radius:14px;padding:4px 14px;margin:10px 0}
+summary{font-weight:700;cursor:pointer;padding:10px 0;font-size:1.02rem}
+details[open] summary{border-bottom:1px solid var(--l);margin-bottom:6px}
+ul{padding-left:20px;margin:.3em 0}
+li{margin:.25em 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:8px 0}
+.sc{overflow-x:auto}
+td,th{border:1px solid var(--l);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--l)}
+.dica{background:color-mix(in srgb,#e6a817 20%,var(--c));border-left:4px solid #e6a817;padding:8px 10px;border-radius:8px;margin:10px 0;font-size:.92rem}
+.key{background:color-mix(in srgb,var(--a) 14%,var(--c));border-left:4px solid var(--a);padding:8px 10px;border-radius:8px;margin:10px 0;font-size:.92rem}
+.nav{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.nav a{background:var(--c);border:1px solid var(--l);border-radius:20px;padding:5px 11px;font-size:.82rem;color:var(--t);text-decoration:none}
+/* tabela z-score */
+.z{display:grid;grid-template-columns:34px repeat(4,1fr);gap:4px;font-size:.72rem;text-align:center;margin:10px 0}
+.z .h{font-weight:700;font-size:.74rem;padding:4px 2px}
+.z .h small{display:block;font-weight:400;color:var(--m)}
+.z .zl{display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--m)}
+.cel{border-radius:7px;padding:6px 2px;color:#fff;display:flex;align-items:center;justify-content:center;line-height:1.2}
+.vd{background:#3d6b1f}.am{background:#9a6b1e}.lr{background:#8a4325}.vm{background:#8a3038}
+/* waterlow */
+.w{display:grid;grid-template-columns:50px 1fr 1fr;gap:5px;margin:10px 0;text-align:center;font-size:.86rem}
+.w .cel{padding:12px 4px;flex-direction:column}
+.w .ax{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;color:var(--m)}
+.cel small{font-weight:400;opacity:.9}
+</style>
+</head>
+<body>
+<main>
+<h1>Resumo · Avaliação Nutricional</h1>
+<p class="sub">1ª prova · Profª Sheylane Andrade · só o que importa, sem cálculo</p>
+<div class="nav">
+<a href="#a1">Aula 1</a><a href="#a2">Aula 2</a><a href="#a3">Aula 3</a><a href="#a4">Aula 4</a><a href="#a5">Aula 5</a><a href="#tab">Tabelas</a><a href="#comp">Comparativos</a>
+</div>
+
+<div class="key"><b>Ideia central da matéria:</b> nenhum parâmetro sozinho define o estado nutricional. Precisa juntar vários indicadores (clínico + bioquímico + físico + alimentar) para o diagnóstico ficar mais preciso.</div>
+
+<!-- AULA 1 -->
+<details id="a1" open>
+<summary>Aula 1 · Avaliação do Estado Nutricional (geral)</summary>
+<h2>O que é</h2>
+<p>Jelliffe (1966): medir as variações das dimensões físicas e da composição global do corpo em diferentes épocas da vida e graus de nutrição. É um processo de identificar a condição nutricional de indivíduos e populações, mais profundo e completo que a triagem.</p>
+<h2>Objetivos</h2>
+<ul>
+<li><b>Identificar</b> alterações metabólicas e orgânicas que dependem da alimentação</li>
+<li><b>Prevenir</b> e controlar agravos nutricionais</li>
+<li><b>Apoiar</b> quem precisa de suporte nutricional imediato</li>
+</ul>
+<h2>Conceito de balança</h2>
+<p>Ingestão de nutrientes × necessidade de nutrientes. <b>Estado nutricional ótimo</b> = necessidades fisiológicas atendidas.</p>
+<ul>
+<li><b>Do lado da ingestão pesam:</b> fatores emocionais, econômicos, sociais/culturais e físicos (doenças, má absorção)</li>
+<li><b>Do lado da necessidade pesam:</b> manutenção do corpo, crescimento e desenvolvimento, condições especiais (estresse fisiológico, febre, infecção, doenças)</li>
+</ul>
+<h2>Determinantes</h2>
+<ul>
+<li><b>Imediatos:</b> estado de saúde e consumo de alimentos</li>
+<li><b>Intermediários:</b> serviços de saúde, moradia, saneamento, disponibilidade e produção de alimentos</li>
+<li><b>Base:</b> educação, renda, posse da terra (e aspectos históricos, econômicos, políticos e culturais)</li>
+</ul>
+<h2>Métodos: duas formas de separar</h2>
+<div class="sc"><table>
+<tr><th>Objetivos (quantitativo)<th>Subjetivos (qualitativo)</tr>
+<tr><td>Antropometria (peso, altura, dobras), avaliação bioquímica (exames), consumo alimentar (inquéritos)<td>Exame físico (sinais e sintomas) e ASG (Avaliação Subjetiva Global)</tr>
+</table></div>
+<div class="sc"><table>
+<tr><th>Diretos (o indivíduo)<th>Indiretos (o ambiente)</tr>
+<tr><td>Avaliação clínica, física e bioquímica: veem as manifestações no corpo<td>Indicadores socioeconômicos e demográficos (renda, saneamento, escolaridade, acesso à saúde) e avaliação alimentar: veem as causas ambientais</tr>
+</table></div>
+<h2>Os 4 focos</h2>
+<ul>
+<li><b>Clínica:</b> história clínica (doenças atuais e passadas, medicamentos, cirurgias, ASG), história familiar (inclui DCNT) e revisão de sistemas</li>
+<li><b>Bioquímica:</b> exames hematológicos (hemograma, glicemia), hormonais (tireoide, insulina), função hepática, mineralograma, vitaminograma</li>
+<li><b>Física e antropometria:</b> aspecto geral, antropometria (peso, altura, circunferências, pregas) e sinais clínicos (mucosa, pele, cabelo, edema)</li>
+<li><b>Alimentar:</b> retrospectivos (R24h, QFA, história dietética) e prospectivo (registro alimentar)</li>
+</ul>
+<div class="dica"><b>Início do atendimento:</b> identificação básica → escuta ativa (queixa principal, o verdadeiro motivo da consulta) → estilo de vida (tabagismo, álcool/drogas, atividade física, sono, ingestão hídrica, mastigação).</div>
+</details>
+
+<!-- AULA 2 -->
+<details id="a2">
+<summary>Aula 2 · Avaliação Dietética (consumo)</summary>
+<h2>Por que medir o consumo</h2>
+<ul>
+<li>Estimar a ingestão de alimentos, grupos ou nutrientes</li>
+<li>Ver a relação entre estado nutricional e desfechos de saúde</li>
+<li>Identificar padrões e hábitos ao longo do tempo</li>
+<li>Planejar políticas e programas de saúde pública</li>
+</ul>
+<div class="key"><b>Não existe método perfeito.</b> Todo método tem erro porque se baseia no <b>relato humano</b>, que falha. O erro pode vir do entrevistado (memória, vocabulário, omissões, reações defensivas), do entrevistador (falta de empatia) e do método (dificuldade de quantificar porção).</div>
+<h2>Retrospectivo × Prospectivo</h2>
+<div class="sc"><table>
+<tr><th><th>Retrospectivo<th>Prospectivo</tr>
+<tr><td><b>Como funciona</b><td>Depende da memória<td>Registro em tempo real</tr>
+<tr><td><b>Métodos</b><td>Recordatório 24h, QFA, História Dietética<td>Registro Alimentar (diário)</tr>
+</table></div>
+<h2>Recordatório de 24h (R24h)</h2>
+<ul>
+<li>Definir e quantificar tudo que foi comido e bebido no período anterior à entrevista (normalmente o dia anterior completo)</li>
+<li>Obrigatório: tipo de alimento, forma de preparo e quantidade</li>
+<li>Anotar o dia da semana (diferenciar dia útil de fim de semana)</li>
+<li>Usar <b>álbuns fotográficos de porções</b> ajuda muito a reduzir erro de quantidade</li>
+</ul>
+<div class="sc"><table>
+<tr><th>Vantagens<th>Desvantagens</tr>
+<tr><td>Rápido, barato, <b>não reativo</b> (não muda a ingestão), serve para qualquer idade e para analfabetos<td>Depende da memória, do entrevistador, difícil estimar porção, pode ser um dia atípico</tr>
+</table></div>
+<div class="dica">1 único R24h <b>não</b> estima a ingestão habitual. Recordatórios seriados (vários dias não consecutivos) podem estimar.</div>
+<h2>QFA (Questionário de Frequência Alimentar)</h2>
+<ul>
+<li>Objetivo: estimar a <b>ingestão habitual</b>; liga o consumo excessivo ao risco de DCNT</li>
+<li>Lista <b>finita</b> de alimentos pré-definidos; muito usado em estudos populacionais</li>
+<li><b>Qualitativo:</b> só pergunta a frequência. <b>Semiquantitativo:</b> acrescenta a porção em medida caseira</li>
+</ul>
+<div class="sc"><table>
+<tr><th>Pontos fortes<th>Pontos fracos</tr>
+<tr><td>Rápido, barato, simples; estima ingestão habitual; não altera o padrão; reduz a variação de um dia para o outro<td>Depende da memória de hábitos passados, lista limitada, quantificação pouco exata, limitado para idosos e analfabetos</tr>
+</table></div>
+<h2>História Dietética</h2>
+<ul>
+<li>Entrevista longa sobre hábitos <b>atuais e passados</b>; costuma juntar QFA + R24h</li>
+<li>Considera variação sazonal, fumo, exercício físico e o "ecossistema" de vida do paciente</li>
+<li><b>Bom:</b> descrição mais profunda (qualitativa e quantitativa) e elimina variação dia a dia</li>
+<li><b>Ruim:</b> demora de 1 a 2 horas, exige nutricionista treinado, difícil padronizar, exige muita memória</li>
+</ul>
+<h2>Registro Dietético (diário alimentar)</h2>
+<ul>
+<li>Anotar tudo no <b>exato momento</b> do consumo, por 3, 5 ou 7 dias (em dias alternados)</li>
+<li><b>Obrigatório incluir 1 dia de fim de semana</b></li>
+<li>Porções em medida caseira ou pesagem; anotar preparo e sal/açúcar/temperos adicionados</li>
+<li>Pode incluir horário, como se sentiu e saciedade (mostra a parte emocional/psicológica)</li>
+</ul>
+<div class="sc"><table>
+<tr><th>Vantagens<th>Desvantagens</tr>
+<tr><td>Não depende da memória, alta exatidão, mais precisão (principalmente com pesagem)<td><b>Efeito observador</b> (anotar muda o hábito), alta carga para o paciente, precisa saber medidas caseiras, custo de tempo</tr>
+</table></div>
+<div class="dica">Todo consumo deve ser cruzado com alergias, intolerâncias, tabus culturais, preferências e aversões.</div>
+</details>
+
+<!-- AULA 3 -->
+<details id="a3">
+<summary>Aula 3 · Avaliação Física I (aspecto geral, entradas e antropometria)</summary>
+<h2>Aspecto geral (qualitativo)</h2>
+<p>Observação do paciente: <b>bom</b> (corado, contactuante), <b>regular</b> (sinais leves de debilidade), <b>comprometido/grave</b> (prostração, palidez, precisa de suporte intensivo).</p>
+<h2>Nível de consciência</h2>
+<p>Orientado/consciente → sonolento → desorientado → inconsciente → coma.</p>
+<h2>Sinais vitais</h2>
+<ul>
+<li><b>Pressão:</b> hipotenso (baixa), normotenso, hipertenso (alta)</li>
+<li><b>Temperatura:</b> hipotérmico (abaixo de 36 °C), afebril (36 a 37,2 °C), febril (acima de 37,8 °C). Febre aumenta a demanda calórica e hídrica</li>
+</ul>
+<h2>Eliminações</h2>
+<ul>
+<li><b>Diurese:</b> poliúria (excesso), oligúria (reduzida), anúria (ausência). Cor clara = bem hidratado; concentrada = desidratação; hemática = sangue (trauma ou infecção)</li>
+<li><b>Sondagem vesical:</b> cateter pela uretra até a bexiga. <b>Nefrostomia:</b> dreno direto no rim pela pele lombar (obstrução total entre rim e bexiga)</li>
+<li><b>Evacuações:</b> constipação ↔ normal ↔ diarreia (risco de desidratação e perda de nutrientes). <b>Colostomia:</b> porção do intestino grosso exteriorizada na parede abdominal, com bolsa coletora</li>
+</ul>
+<h2>Vias de alimentação ("mapa das entradas")</h2>
+<div class="sc"><table>
+<tr><th>Via<th>Quando</tr>
+<tr><td><b>Via oral (VO)</b><td>Fisiológica; precisa de consciência alerta e trato digestivo funcionando</tr>
+<tr><td><b>SNG / SNE</b><td>Sondas pelo nariz até estômago (SNG) ou intestino (SNE); para quem não consegue engolir</tr>
+<tr><td><b>GTT / JJT</b><td>Sondas cirúrgicas direto na parede abdominal (gastro e jejuno); nutrição de longo prazo</tr>
+<tr><td><b>NPT (parenteral total)</b><td>Veia (sangue); só quando o intestino não funciona</tr>
+<tr><td><b>Jejum zero</b><td>Trato digestivo em repouso absoluto</tr>
+</table></div>
+<h2>Escada da dieta oral</h2>
+<p>Da maior restrição para a menor: líquida restrita/prova → líquidos claros → líquida total → líquido-pastosa → pastosa → branda → geral/normal. Depende da tolerância gastrointestinal, consciência e necessidades metabólicas.</p>
+<h2>Avaliação antropométrica</h2>
+<p>Estudo sistemático das medidas do corpo para avaliar o estado nutricional.</p>
+<div class="sc"><table>
+<tr><th>Equipamento<th>Mede</tr>
+<tr><td><b>Fita métrica</b><td>Circunferências</tr>
+<tr><td><b>Balança</b><td>Peso e estatura (para o IMC)</tr>
+<tr><td><b>Adipômetro</b><td>Dobras cutâneas</tr>
+</table></div>
+<h2>Peso: tipos</h2>
+<ul>
+<li><b>Peso atual:</b> medido na hora, em balança firme e plana, com pouca roupa, descalço, ereto</li>
+<li><b>Peso habitual:</b> referido pelo paciente (usado quando não dá para pesar ou para ver perda recente)</li>
+<li><b>Peso ideal:</b> definido por idade, biótipo, sexo e altura (baseado em IMC)</li>
+<li><b>Peso estimado:</b> calculado por fórmulas quando não dá para pesar (ex.: acamado)</li>
+<li><b>Peso ajustado:</b> correção para quem está muito abaixo ou muito acima do peso ideal</li>
+</ul>
+<p><b>Qual usar?</b> Dá para pesar? Peso atual. Não dá? Peso estimado. Quer ver mudança recente? Habitual. Quer meta? Ideal. Muito baixo ou muito alto em relação ao ideal? Ajustado.</p>
+<h2>Perda de peso</h2>
+<p>A variação em relação ao peso habitual é o índice preditivo mais importante (Blackburn e Bistrian, 1977). Quanto mais rápida a perda, mais grave: perda grave em 1 semana, 1 mês, 3 e 6 meses.</p>
+<h2>Ajustes clínicos</h2>
+<ul>
+<li>Peso hídrico: ascite, edema (tornozelo, joelho, raiz da coxa) e anasarca precisam ser descontados do peso</li>
+<li>Amputação: ajusta-se o peso ideal conforme o segmento perdido</li>
+</ul>
+<h2>Estatura</h2>
+<ul>
+<li><b>Padrão ouro:</b> em pé, no <b>plano de Frankfurt</b> (olhar no horizonte), usando fita inelástica/estadiômetro ou antropômetro</li>
+<li><b>Quando não dá para ficar em pé:</b> envergadura (braços estendidos, distância entre dedos médios), estatura recumbente (deitado, paciente confinado ao leito) e altura do joelho</li>
+</ul>
+<h2>IMC</h2>
+<div class="dica">Limitação importante: o IMC <b>não reflete a composição corporal</b>. Dois indivíduos com o mesmo IMC podem ter gordura corporal bem diferente (ex.: atleta × pessoa sedentária).</div>
+<div class="sc"><table>
+<tr><th>Adultos (OMS)<th>Classificação</tr>
+<tr><td>&lt; 16<td>Magreza grau III</tr>
+<tr><td>16 – 16,9<td>Magreza grau II</tr>
+<tr><td>17 – 18,4<td>Magreza grau I</tr>
+<tr><td>18,5 – 24,9<td><b>Eutrofia</b></tr>
+<tr><td>25 – 29,9<td>Pré-obeso</tr>
+<tr><td>30 – 34,9<td>Obesidade grau I</tr>
+<tr><td>35 – 39,9<td>Obesidade grau II</tr>
+<tr><td>≥ 40<td>Obesidade grau III</tr>
+</table></div>
+<div class="sc"><table>
+<tr><th>Idosos (&gt; 60 anos)<th>Classificação</tr>
+<tr><td>&lt; 22<td>Desnutrição</tr>
+<tr><td>22 – 27<td><b>Normal</b></tr>
+<tr><td>&gt; 27<td>Excesso de peso</tr>
+</table></div>
+<p class="sub">A faixa de normalidade "sobe" com o envelhecimento.</p>
+</details>
+
+<!-- AULA 4 -->
+<details id="a4">
+<summary>Aula 4 · Avaliação Física II (cineantropometria e circunferências)</summary>
+<h2>Cineantropometria</h2>
+<p>Do grego: <i>kinein</i> (movimento) + <i>anthropos</i> (homem) + <i>metron</i> (medida). É o estudo da mensuração do tamanho e das proporções do corpo, sua relação com o movimento e fatores que o influenciam.</p>
+<ul>
+<li><b>ISAK:</b> Sociedade Internacional para o Progresso da Cineantropometria; define os padrões internacionais de medida (2011)</li>
+<li><b>Tríade da precisão:</b> avaliador (técnica e conduta) + equipamento (adequado e calibrado) + ambiente (controle e espaço)</li>
+<li><b>Avaliador:</b> padronizar a técnica, conhecer bem os equipamentos, escolher os métodos para o público-alvo, deixar o avaliado relaxado e confiante, marcar os pontos anatômicos com exatidão</li>
+<li>Adaptar ao público: idade, sexo, nível de atividade física, necessidades especiais, patologias</li>
+</ul>
+<h2>Equipamentos (decorar!)</h2>
+<div class="sc"><table>
+<tr><th>Tipo de medida<th>Exemplo<th>Equipamento</tr>
+<tr><td>Lineares (longitudinais)<td>Estatura, comprimento dos membros<td><b>Estadiômetro</b> (ou paquímetro)</tr>
+<tr><td>Lineares (transversais)<td>Diâmetros, envergadura<td><b>Paquímetro</b></tr>
+<tr><td>Circunferências<td>Perímetros<td><b>Trena/fita antropométrica</b></tr>
+<tr><td>Massa e gordura<td>Dobras cutâneas, peso<td><b>Adipômetro</b> (dobras) e <b>balança</b> (peso)</tr>
+</table></div>
+<div class="dica">Mapa anatômico: toda a avaliação parte de <b>pontos anatômicos</b> (ossos) bem identificados (base: Norton e Olds, 2005).</div>
+<h2>Circunferências (perímetros)</h2>
+<ul>
+<li><b>Objetivo:</b> medidas que indicam o estado nutricional e o padrão corporal</li>
+<li><b>A circunferência reúne 3 coisas:</b> tamanho ósseo + massa muscular + gordura</li>
+<li><b>Regra de ouro:</b> fita métrica <b>inelástica</b></li>
+<li><b>Erro crítico:</b> comprimir o tecido adiposo ao apertar a fita</li>
+</ul>
+<h2>Principais circunferências</h2>
+<ul>
+<li><b>Braço:</b> relaxado, no ponto médio entre acrômio e olécrano. Existe também a do <b>braço flexionado</b> (contraindo o bíceps), que registra a maior circunferência</li>
+<li><b>Cintura:</b> região mais estreita entre o tórax e o quadril (entre a última costela e a crista ilíaca), no fim da expiração normal. Em obeso, medir no maior perímetro (geralmente na altura do umbigo)</li>
+<li><b>Quadril:</b> maior volume glúteo, fita na horizontal, sem o avaliado contrair os glúteos</li>
+<li><b>Coxa</b></li>
+<li><b>Panturrilha:</b> maior circunferência, em cima de uma caixa/banco com o peso igual nos dois pés. Reflete massa muscular total, é indicador direto de desnutrição atual e a OMS recomenda para gestantes e idosos. Adequada quando ≥ 31 cm</li>
+</ul>
+<h2>Risco metabólico pela cintura (OMS)</h2>
+<div class="sc"><table>
+<tr><th><th>Homem<th>Mulher</tr>
+<tr><td>Risco elevado<td>≥ 94 cm<td>≥ 80 cm</tr>
+<tr><td>Risco muito elevado<td>≥ 102 cm<td>≥ 88 cm</tr>
+</table></div>
+<h2>RCQ (razão cintura-quadril)</h2>
+<p>Cintura dividida pelo quadril. Mostra a distribuição de gordura e o risco clínico.</p>
+<div class="sc"><table>
+<tr><th>Tipo<th>Gordura<th>Risco</tr>
+<tr><td><b>Andróide</b> ("maçã")<td>Tronco/abdômen (obesidade superior)<td>Risco <b>cardiovascular</b></tr>
+<tr><td><b>Ginóide</b> ("pera")<td>Glúteo-femoral (obesidade inferior)<td>Artrose e varizes</tr>
+</table></div>
+<h2>Diâmetros ósseos</h2>
+<p>Medidos com <b>paquímetro</b>: distância linear entre dois pontos ósseos. Vistos na aula: bi-epicondilar do úmero, bi-epicondilar do fêmur e bi-estiloide (radial, no punho).</p>
+</details>
+
+<!-- AULA 5 -->
+<details id="a5">
+<summary>Aula 5 · Avaliação Física III (dobras cutâneas)</summary>
+<h2>O que é dobra cutânea</h2>
+<p>Medida da <b>espessura</b> de uma dobra de pele + gordura subcutânea, feita com o <b>adipômetro (plicômetro)</b>. Serve para estimar a gordura corporal.</p>
+<h2>Regras gerais da aferição</h2>
+<ul>
+<li>Sempre no <b>lado direito</b> do corpo</li>
+<li>A <b>mão esquerda</b> forma e segura a dobra (pinça com indicador e polegar) durante toda a medida</li>
+<li>Marcar os pontos antes com <b>lápis dermatográfico</b>, depois de palpar o osso (a localização óssea é pré-requisito)</li>
+<li>Posicionar as hastes do adipômetro perpendicularmente, cerca de 1 cm abaixo do ponto marcado</li>
+<li>Ler o mostrador em <b>2 a 3 segundos</b> (para o tecido não acomodar)</li>
+<li>Fazer as medidas em <b>circuito</b>, repetindo e usando a média; se a diferença for grande, fazer uma terceira medida</li>
+</ul>
+<h2>Dobras vistas (só o geral)</h2>
+<div class="sc"><table>
+<tr><th>Dobra<th>Onde<th>Sentido</tr>
+<tr><td>Tricipital<td>Parte de trás do braço<td>Vertical</tr>
+<tr><td>Bicipital<td>Parte da frente do braço<td>Vertical</tr>
+<tr><td>Subescapular<td>Costas, abaixo da escápula<td>Oblíqua (~45°)</tr>
+<tr><td>Axilar média<td>Lateral do tórax<td>Vertical</tr>
+<tr><td>Peitoral<td>Tórax<td>Oblíqua</tr>
+<tr><td>Supra-ilíaca<td>Acima da crista ilíaca<td>Diagonal</tr>
+<tr><td>Supraespinhal<td>Acima da espinha ilíaca<td>Diagonal (~45°)</tr>
+<tr><td>Abdominal<td>Ao lado do umbigo<td>Vertical</tr>
+<tr><td>Coxa média<td>Frente da coxa<td>Vertical</tr>
+<tr><td>Panturrilha medial<td>Parte interna da panturrilha (joelho a 90°)<td>Vertical</tr>
+</table></div>
+<div class="dica">Não precisa decorar o ponto exato de cada uma, mas é bom saber que o osso é a referência, que usa adipômetro e que a dobra é destacada vertical, oblíqua ou diagonal dependendo do local.</div>
+</details>
+
+<!-- COMPARATIVOS -->
+<details id="comp" open>
+<summary>Comparativos que costumam cair</summary>
+<h2>Circunferência × Dobra cutânea</h2>
+<div class="sc"><table>
+<tr><th><th>Circunferência<th>Dobra cutânea</tr>
+<tr><td><b>Equipamento</b><td>Fita/trena antropométrica inelástica<td>Adipômetro (plicômetro)</tr>
+<tr><td><b>O que mede</b><td>Perímetro do segmento<td>Espessura da pele + gordura subcutânea</tr>
+<tr><td><b>O que reflete</b><td>Osso + músculo + gordura juntos<td>Gordura subcutânea</tr>
+<tr><td><b>Cuidado</b><td>Não comprimir o tecido<td>Ler em 2 a 3 s, lado direito, mão esquerda segura a dobra</tr>
+<tr><td><b>Exemplos de uso</b><td>Cintura, RCQ, panturrilha<td>Estimar % de gordura</tr>
+</table></div>
+<h2>Equipamento certo para cada coisa</h2>
+<div class="sc"><table>
+<tr><th>Equipamento<th>Para que serve</tr>
+<tr><td>Balança<td>Peso</tr>
+<tr><td>Estadiômetro / antropômetro<td>Estatura</tr>
+<tr><td>Fita/trena antropométrica<td>Circunferências</tr>
+<tr><td>Adipômetro<td>Dobras cutâneas</tr>
+<tr><td>Paquímetro<td>Diâmetros ósseos</tr>
+</table></div>
+<h2>Métodos de avaliação alimentar</h2>
+<div class="sc"><table>
+<tr><th>Método<th>Tipo<th>Resumo</tr>
+<tr><td>R24h<td>Retrospectivo<td>Dia anterior; rápido; 1 só não dá o habitual</tr>
+<tr><td>QFA<td>Retrospectivo<td>Lista finita; ingestão habitual; qualitativo ou semiquantitativo</tr>
+<tr><td>História dietética<td>Retrospectivo<td>Longa (1 a 2 h); passado e presente</tr>
+<tr><td>Registro alimentar<td>Prospectivo<td>Anota na hora; 3, 5 ou 7 dias; inclui fim de semana; efeito observador</tr>
+</table></div>
+</details>
+
+<!-- TABELAS -->
+<details id="tab" open>
+<summary>As 2 tabelas (infância)</summary>
+
+<h2>1) Escore-z (classificação por faixa etária)</h2>
+<p class="sub">Escore-z mostra o quanto o valor da criança se afasta da mediana de referência. Cada coluna é um indicador.</p>
+<div class="z">
+<div></div>
+<div class="h">P/E e IMC/I<small>0–5 anos</small></div>
+<div class="h">IMC/I<small>5–19 anos</small></div>
+<div class="h">Peso/I<small>0–10 anos</small></div>
+<div class="h">Estat./I<small>0–19 anos</small></div>
+
+<div class="zl" style="grid-row:2 / span 1">+3</div>
+<div class="cel vm" style="grid-column:2;grid-row:2">Obesidade</div>
+<div class="cel vm" style="grid-column:3;grid-row:2">Obesidade grave</div>
+<div class="cel lr" style="grid-column:4;grid-row:2 / span 2">Peso elevado</div>
+<div class="cel vd" style="grid-column:5;grid-row:2 / span 7">Estatura adequada</div>
+
+<div class="zl" style="grid-column:1;grid-row:3">+2</div>
+<div class="cel lr" style="grid-column:2;grid-row:3">Sobrepeso</div>
+<div class="cel lr" style="grid-column:3;grid-row:3">Obesidade</div>
+
+<div class="zl" style="grid-column:1;grid-row:4">+1</div>
+<div class="cel am" style="grid-column:2;grid-row:4">Risco de sobrepeso</div>
+<div class="cel am" style="grid-column:3;grid-row:4">Sobrepeso</div>
+<div class="cel vd" style="grid-column:4;grid-row:4 / span 4">Peso adequado</div>
+
+<div class="zl" style="grid-column:1;grid-row:5">0</div>
+<div class="cel vd" style="grid-column:2;grid-row:5 / span 3">Eutrofia</div>
+<div class="cel vd" style="grid-column:3;grid-row:5 / span 3">Eutrofia</div>
+
+<div class="zl" style="grid-column:1;grid-row:8">−2</div>
+<div class="cel am" style="grid-column:2;grid-row:8">Magreza</div>
+<div class="cel am" style="grid-column:3;grid-row:8">Magreza</div>
+<div class="cel am" style="grid-column:4;grid-row:8">Baixo peso</div>
+<div class="cel am" style="grid-column:5;grid-row:8">Baixa estatura</div>
+
+<div class="zl" style="grid-column:1;grid-row:9">−3</div>
+<div class="cel vm" style="grid-column:2;grid-row:9">Magreza acentuada</div>
+<div class="cel vm" style="grid-column:3;grid-row:9">Magreza acentuada</div>
+<div class="cel vm" style="grid-column:4;grid-row:9">Muito baixo peso</div>
+<div class="cel vm" style="grid-column:5;grid-row:9">Muito baixa estatura</div>
+</div>
+<p class="sub">Verde = adequado · amarelo/laranja = atenção · vermelho = mais grave. A faixa verde de eutrofia/peso/estatura adequada fica entre −2 e +1 (no peso/I e estatura/I, até +2 ou +3).</p>
+
+<p><b>Mesma informação em lista (caso a grade fique apertada):</b></p>
+<div class="sc"><table>
+<tr><th>Z<th>P/E e IMC/I (0–5)<th>IMC/I (5–19)<th>Peso/I (0–10)<th>Estat./I (0–19)</tr>
+<tr><td>acima de +3<td>Obesidade<td>Obesidade grave<td>Peso elevado<td>Estatura adequada</tr>
+<tr><td>+2 a +3<td>Sobrepeso<td>Obesidade<td>Peso elevado<td>Estatura adequada</tr>
+<tr><td>+1 a +2<td>Risco de sobrepeso<td>Sobrepeso<td>Peso adequado<td>Estatura adequada</tr>
+<tr><td>−2 a +1<td>Eutrofia<td>Eutrofia<td>Peso adequado<td>Estatura adequada</tr>
+<tr><td>−3 a −2<td>Magreza<td>Magreza<td>Baixo peso<td>Baixa estatura</tr>
+<tr><td>abaixo de −3<td>Magreza acentuada<td>Magreza acentuada<td>Muito baixo peso<td>Muito baixa estatura</tr>
+</table></div>
+
+<h2>2) Classificação de Waterlow</h2>
+<p class="sub">Cruza dois indicadores: <b>P/E</b> (peso para estatura, corte 90%) e <b>E/I</b> (estatura para idade, corte 95%).</p>
+<div class="w">
+<div></div>
+<div class="ax">E/I normal<br>(&gt; 95%)</div>
+<div class="ax">E/I baixo<br>(&lt; 95%)</div>
+
+<div class="ax">P/E normal<br>(&gt; 90%)</div>
+<div class="cel vd"><b>Eutrófico</b><small>P/E normal e E/I normal</small></div>
+<div class="cel am"><b>Pregresso</b><small>P/E normal e E/I baixo</small></div>
+
+<div class="ax">P/E baixo<br>(&lt; 90%)</div>
+<div class="cel am"><b>Agudo</b><small>P/E baixo e E/I normal</small></div>
+<div class="cel vm"><b>Crônico</b><small>P/E baixo e E/I baixo</small></div>
+</div>
+<div class="key">Macete: <b>Agudo</b> = emagreceu há pouco (só o peso caiu, a altura está normal). <b>Pregresso</b> = já teve desnutrição no passado, recuperou o peso mas ficou baixinho. <b>Crônico</b> = os dois baixos, desnutrição que já dura.</div>
+</details>
+
+<p class="sub" style="text-align:center;margin-top:18px">Bons estudos! 🍎</p>
+</main>
+</body>
+</html>
